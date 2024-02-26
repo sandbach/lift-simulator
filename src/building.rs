@@ -1,6 +1,4 @@
-use rand::seq::SliceRandom;
-use rand::thread_rng;
-use rand::Rng;
+use rand::{seq::SliceRandom, thread_rng, Rng};
 use ratatui::widgets::{Bar, BarGroup};
 use std::{
     sync::{Arc, RwLock},
