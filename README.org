@@ -1,0 +1,3 @@
+#+title: lift-simulator
+
+This is a toy program to simulate the (ideal) behaviour of lifts in a building.
