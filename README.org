@@ -1,3 +1,5 @@
 #+title: lift-simulator
 
 This is a toy program to simulate the (ideal) behaviour of lifts in a building.
+
+It was written largely as an exercise in concurrency and shared state in Rust.
