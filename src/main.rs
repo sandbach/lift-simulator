@@ -12,17 +12,13 @@ use ratatui::{
     Terminal,
 };
 use std::io::{stdout, Result};
-// use std::sync::Arc;
 use clap::Parser;
 use tui_textarea::{Input, Key, TextArea};
 
 mod building;
 
 use building::{Building, Passenger};
-// use rand::Rng;
-// use std::{thread, time::Duration};
 
-// use std::{sync::Arc, thread};
 /// helper function to create a centered rect using up certain percentage of the available rect `r`
 fn centered_line(percent_x: u16, r: Rect) -> Rect {
     // Cut the given rectangle into three vertical pieces
