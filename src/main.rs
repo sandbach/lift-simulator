@@ -44,16 +44,20 @@ fn centered_line(percent_x: u16, r: Rect) -> Rect {
         .split(popup_layout[1])[1] // Return the middle chunk
 }
 
-/// Program to simulate a building with lifts.
+/// Program to simulate a building with lifts
 ///
 /// While the program is running, the following keybindings are in effect:
 ///
-/// - <q>: Quit the program.
-/// - <space>: Bring up a dialog box to add a new passenger.
-/// - <r>: Add a new passenger going between two random floors.
-/// - <R>: Add a new passenger going between a random floor and the ground floor.
+/// <q>:     Quit the program.
+///
+/// <space>: Bring up a dialog box to add a new passenger.
+///
+/// <r>:     Add a new passenger going between two random floors.
+///
+/// <R>:     Add a new passenger going between a random floor and the ground
+///          floor.
 #[derive(Parser, Debug)]
-#[command(version, about, long_about = None)]
+#[command(version, about, long_about)]
 struct Args {
     /// Bottom floor in the building
     #[arg(short, long, default_value_t = 0)]
